@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-BlackItalic.woff2') format('woff2'),
+        url('NexaText-Trial-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-BoldItalic.woff2') format('woff2'),
+        url('NexaText-Trial-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Black.woff2') format('woff2'),
+        url('NexaText-Trial-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Bold.woff2') format('woff2'),
+        url('NexaText-Trial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Ex';
+    src: url('NexaText-Trial-ExtraLightItalic.woff2') format('woff2'),
+        url('NexaText-Trial-ExtraLightItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Book';
+    src: url('NexaText-Trial-BookItalic.woff2') format('woff2'),
+        url('NexaText-Trial-BookItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Extra';
+    src: url('NexaText-Trial-ExtraLight.woff2') format('woff2'),
+        url('NexaText-Trial-ExtraLight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Book';
+    src: url('NexaText-Trial-Book.woff2') format('woff2'),
+        url('NexaText-Trial-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Extra';
+    src: url('NexaText-Trial-ExtraBold.woff2') format('woff2'),
+        url('NexaText-Trial-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial Ex';
+    src: url('NexaText-Trial-ExtraBoldItalic.woff2') format('woff2'),
+        url('NexaText-Trial-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-HeavyItalic.woff2') format('woff2'),
+        url('NexaText-Trial-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-LightItalic.woff2') format('woff2'),
+        url('NexaText-Trial-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Regular.woff2') format('woff2'),
+        url('NexaText-Trial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Heavy.woff2') format('woff2'),
+        url('NexaText-Trial-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Light.woff2') format('woff2'),
+        url('NexaText-Trial-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-RegularItalic.woff2') format('woff2'),
+        url('NexaText-Trial-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-Thin.woff2') format('woff2'),
+        url('NexaText-Trial-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Text-Trial';
+    src: url('NexaText-Trial-ThinItalic.woff2') format('woff2'),
+        url('NexaText-Trial-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-BlackItalic.woff2') format('woff2'),
+        url('Nexa-Trial-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-Black.woff2') format('woff2'),
+        url('Nexa-Trial-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-Bold.woff2') format('woff2'),
+        url('Nexa-Trial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Book';
+    src: url('Nexa-Trial-BookItalic.woff2') format('woff2'),
+        url('Nexa-Trial-BookItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-BoldItalic.woff2') format('woff2'),
+        url('Nexa-Trial-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Extra';
+    src: url('Nexa-Trial-ExtraBold.woff2') format('woff2'),
+        url('Nexa-Trial-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Book';
+    src: url('Nexa-Trial-Book.woff2') format('woff2'),
+        url('Nexa-Trial-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Extra';
+    src: url('Nexa-Trial-ExtraBoldItalic.woff2') format('woff2'),
+        url('Nexa-Trial-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Extra';
+    src: url('Nexa-Trial-ExtraLight.woff2') format('woff2'),
+        url('Nexa-Trial-ExtraLight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial Extra';
+    src: url('Nexa-Trial-ExtraLightItalic.woff2') format('woff2'),
+        url('Nexa-Trial-ExtraLightItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-Heavy.woff2') format('woff2'),
+        url('Nexa-Trial-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa-Trial';
+    src: url('Nexa-Trial-HeavyItalic.woff2') format('woff2'),
+        url('Nexa-Trial-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+

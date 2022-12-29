@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  font-size: 62.5;
+  font-family: "Helvetica";
+  background-color: #FCFCFC;
+
+
+}
+
+.card-shadow {
+  box-shadow: 0px 3px 41px #00000008;
+}
+
+// @layer components {
+//   .card {
+//     background-color: theme('colors.white');
+//     border-radius: theme('borderRadius.lg');
+//     padding: theme('spacing.6');
+//     box-shadow: theme('boxShadow.xl');
+//   }
+// }
