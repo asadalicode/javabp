@@ -78,6 +78,7 @@ p {
 
 .page-layout {
   padding-top: 80px;
+  height: 100vh;
 
   .bg-center-text {
     position: absolute;
@@ -86,7 +87,12 @@ p {
     transform: translate(-50%, -50%);
 
     @include for-phone-only {
-      top: 20%;
+      top: 18%;
+      padding: 1.4em;
+      transform: translate(0%);
+      left: 0;
+      padding: 1.4em;
+
     }
 
 
@@ -113,16 +119,38 @@ p {
     // background-position-y: 200px;
   }
 
-  .bg-cover {
-    background-size: cover;
-    height: 100%;
-    background-repeat: no-repeat;
+  @mixin bg-position-top {
+    background-position: top;
   }
 
-  .bg-cover-auto {
-    background-size: auto;
+  @mixin bg-position-center {
+    background-position: center;
+  }
+
+  .bg-contain {
+    background-size: contain;
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @include for-phone-only {
+      @include bg-position-top;
+      height: 55%;
+    }
+  }
+
+
+
+
+
+  .bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include for-phone-only {
+      background-size: auto;
+    }
   }
 }
