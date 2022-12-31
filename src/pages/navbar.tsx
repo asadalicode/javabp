@@ -6,6 +6,7 @@ import { ReactComponent as MenuClose } from "../assets/icons/cross_icon.svg";
 import { ReactComponent as Linkedln } from "../assets/icons/linkedln.svg";
 import { ReactComponent as Fb } from "../assets/icons/fb.svg";
 import { ReactComponent as Twitter } from "../assets/icons/twitter.svg";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,7 +19,7 @@ const Header = () => {
             <div className="justify-between md:px-16 px-4 mx-auto ">
                 <div>
                     <div className="flex items-center justify-between py-5 ">
-                        <div>
+                        <div onClick={() => setNavbar(!navbar)}>
                             {navbar ? (
                                 // <div></div>
                                 <Logo_white className="md:hidden  h-full w-32" />
@@ -53,22 +54,23 @@ const Header = () => {
                         className={`flex justify-between flex-1 py-10   ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <Logo_white className="sm:hidden" />
+                        <Logo_white onClick={() => setNavbar(!navbar)} className="sm:hidden" />
                         <ul className="items-center justify-center space-y-6  w-full  duration-300  ">
                             <h4 className="font-semibold  px-3 text-right  hover:text-yellow hover:underline">
-                                <a href="javascript:void(0)"> Business, Financial & Legal Templates </a>
+                                <Link to={'/business'} onClick={() => setNavbar(!navbar)}> Business, Financial & Legal Templates </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3 hover:text-yellow hover:underline">
-                                <a href="javascript:void(0)">Capital Investment & Partnerships</a>
+                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Capital Investment & Partnerships </Link>
+
                             </h4>
                             <h4 className="font-semibold  text-right  px-3 hover:text-yellow hover:underline">
-                                <a href="javascript:void(0)">Company Formation & Bank Account Opening</a>
+                                <Link to={'/company'} onClick={() => setNavbar(!navbar)}> Company Formation & Bank Account Opening </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <a href="javascript:void(0)">Citizenship, Residency by Investment Options</a>
+                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Citizenship, Residency by Investment Options </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <a href="javascript:void(0)">Business Consultancy & Marketing</a>
+                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Business Consultancy & Marketing</Link>
                             </h4>
                         </ul>
 

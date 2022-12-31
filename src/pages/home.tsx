@@ -2,12 +2,18 @@ import { useState } from "react";
 import BackroundImage from "../utils/backgroundImage";
 
 import TopBg from "../assets/home/1_web.png";
+import TopMobileBg from "../assets/home/1_mobile.png";
 import Section1Bg from "../assets/home/section1_bg.svg";
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section2MobBg from "../assets/home/section2_mob_bg.png";
 
+import { ReactComponent as Member } from "../assets/business/Member.svg";
+import { ReactComponent as Accounts } from "../assets/business/accounts.svg";
+import { ReactComponent as Dissolution } from "../assets/business/Dissolution.svg";
 
-import Section3Bg from "../assets/home/section3_bg.svg";
+
+
+import Section3Bg from "../assets/home/Bg_yellow_right.svg";
 import Section2UpperBg from "../assets/home/section2_upper_bg.png";
 import Section3UpperBg from "../assets/home/section3_upper_bg.png";
 import Section4UpperBg from "../assets/home/section4_upper_bg.png";
@@ -16,7 +22,6 @@ import Section5UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
 
 import Section4Bg from "../assets/home/2.svg";
 
-import TopMobileBg from "../assets/home/1_mobile.png";
 import { ReactComponent as IconBank } from "../assets/icons/bankAccount.svg";
 import { ReactComponent as IconCompany } from "../assets/icons/company.svg";
 import { ReactComponent as Plain } from "../assets/icons/Plain.svg";
@@ -97,15 +102,34 @@ const Home = () => {
 
 
 
-            <section className="grid grid-cols-2 mt-16  sm:grid-cols-1 bg-white">
-                <BackroundImage url={Section3Bg} classes="text-center space-y-9 bg-right">
-                    <div className="space-y-4 pt-8">
-                        <h2 className="font-bold">Why Work With Us?</h2>
-                        <p className="text-gray-dark opacity-90 text-left tracking-wide">Convenience <br /> At work, at home - anywhere. <br /> Our form is available online, anytime:PC</p>
-                    </div>
-                </BackroundImage>
 
-                <img className=" pt-8" src={Section3UpperBg} />
+
+            <section className="grid grid-cols-2 gap-8  sm:grid-cols-1 px-16 sm:px-8">
+
+                <div className="space-y-4 pt-32 sm:pt-8   py-2">
+                    <h2 className="font-bold">Why Work With Us?</h2>
+                    <p className="text-gray-dark opacity-90 text-left tracking-wide">Convenience <br /> At work, at home - anywhere. <br /> Our form is available online, anytime:PC</p>
+                    <div className="py-4 w-fit border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
+                        <div className=" text-center justify-items-center grid space-y-1 justify-center">
+                            <Member className="w-14" />
+                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                        </div>
+                        <div className=" text-center justify-items-center grid space-y-1 justify-center">
+                            <Accounts className="w-14" />
+                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                        </div>
+                        <div className=" text-center justify-items-center grid space-y-1 justify-center">
+                            <Dissolution className="w-14" />
+                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                        </div>
+                    </div>
+                    <p className="text-gray-dark opacity-90 text-left tracking-wide">No matter what device you're on! <br /> Ease and simplicity at your fingertips! <br /> Expertise <br /> We take a personal approach to each customer. Our customers <br /> consistently see increased satisfaction, enhanced lifestyle and new <br /> opportunities <br /> Cost Effective <br /> An inclusive, one-time, non-refundable registration fee applies to all <br /> registrations. <br /> This must be paid at the time of your application via credit or debit card for your convenience.</p>
+
+                </div>
+
+                <BackroundImage url={IsMobile() ? Section3Bg : Section3Bg} classes={`text-center bg-right`}>
+                    <img src={Section3UpperBg} />
+                </BackroundImage>
             </section>
 
             <BackroundImage url={Section4Bg} className="bg-contain">
