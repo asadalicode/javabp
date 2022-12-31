@@ -9,11 +9,11 @@ import HomeContainer from '../pages/homeContainer';
 
 const routes = [
   {
-    path: "/javabp", component: <HomeContainer />, children: [
-      { path: "/javabp", component: <Home /> },
-      { path: "/javabp/business", component: <BusinessPage /> },
-      { path: "/javabp/capitalInvestment", component: <CapitalInvestment /> },
-      { path: "/javabp/company", component: <Company /> }
+    path: "/", component: <HomeContainer />, children: [
+      { path: "", component: <Home /> },
+      { path: "business", component: <BusinessPage /> },
+      { path: "capitalInvestment", component: <CapitalInvestment /> },
+      { path: "company", component: <Company /> }
     ]
   },
 
