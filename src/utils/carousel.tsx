@@ -35,7 +35,7 @@ const Carousel = (data: any) => {
 
         return false;
     };
-
+    // 
     useEffect(() => {
         if (carousel !== null && carousel.current !== null) {
             carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
