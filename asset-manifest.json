@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/javabp/static/css/main.df6d55cd.css",
+    "main.css": "/javabp/static/css/main.00f59bde.css",
     "main.js": "/javabp/static/js/main.9a1176fa.js",
     "static/js/787.709e8e5a.chunk.js": "/javabp/static/js/787.709e8e5a.chunk.js",
     "static/media/1_web.png": "/javabp/static/media/1_web.cd951f9aa702c9c1130f.png",
@@ -140,12 +140,12 @@
     "static/media/cross_icon.svg": "/javabp/static/media/cross_icon.d852ad5f9fd05b14e801a3015928b37a.svg",
     "index.html": "/javabp/index.html",
     "static/media/menu.svg": "/javabp/static/media/menu.333549877e000df559e74e1afb2f4ce1.svg",
-    "main.df6d55cd.css.map": "/javabp/static/css/main.df6d55cd.css.map",
+    "main.00f59bde.css.map": "/javabp/static/css/main.00f59bde.css.map",
     "main.9a1176fa.js.map": "/javabp/static/js/main.9a1176fa.js.map",
     "787.709e8e5a.chunk.js.map": "/javabp/static/js/787.709e8e5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df6d55cd.css",
+    "static/css/main.00f59bde.css",
     "static/js/main.9a1176fa.js"
   ]
 }
