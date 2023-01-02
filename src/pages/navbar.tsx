@@ -63,20 +63,20 @@ const Header = () => {
                         </Link>
                         <ul className="items-center justify-center space-y-6  w-full  duration-300  ">
                             <h4 className="font-semibold  px-3 text-right  hover:text-yellow hover:underline">
-                                <Link to={'/business'} onClick={() => setNavbar(!navbar)}> Business, Financial & Legal Templates </Link>
+                                <Link to={'/javabp/business'} onClick={() => setNavbar(!navbar)}> Business, Financial & Legal Templates </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3 hover:text-yellow hover:underline">
-                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Capital Investment & Partnerships </Link>
+                                <Link to={'/javabp/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Capital Investment & Partnerships </Link>
 
                             </h4>
                             <h4 className="font-semibold  text-right  px-3 hover:text-yellow hover:underline">
-                                <Link to={'/company'} onClick={() => setNavbar(!navbar)}> Company Formation & Bank Account Opening </Link>
+                                <Link to={'/javabp/company'} onClick={() => setNavbar(!navbar)}> Company Formation & Bank Account Opening </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <Link to={'/citizenship'} onClick={() => setNavbar(!navbar)}> Citizenship, Residency by Investment Options </Link>
+                                <Link to={'/javabp/citizenship'} onClick={() => setNavbar(!navbar)}> Citizenship, Residency by Investment Options </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <Link to={'/marketing'} onClick={() => setNavbar(!navbar)}> Business Consultancy & Marketing</Link>
+                                <Link to={'/javabp/marketing'} onClick={() => setNavbar(!navbar)}> Business Consultancy & Marketing</Link>
                             </h4>
                         </ul>
 
