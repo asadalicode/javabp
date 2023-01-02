@@ -7,26 +7,19 @@ import Section1Bg from "../assets/home/section1_bg.svg";
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section3Bg from "../assets/home/Bg_yellow_right.svg";
 
-import Section2MobBg from "../assets/business/Strategic&Operational.svg";
 import Section2UpperBg from "../assets/business/Strategic&Operational.svg";
 import Section3UpperBg from "../assets/business/financial.png";
-// import Section3UpperBg from "../assets/home/section3_upper_bg.png";
-
 
 import Section5UpperBg from "../assets/home/section5_upper_bg.png";
 import Section5UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
-import { ReactComponent as IconBank } from "../assets/icons/bankAccount.svg";
 import { ReactComponent as IconCompany } from "../assets/icons/company.svg";
-import { ReactComponent as Plain } from "../assets/icons/Plain.svg";
-import { ReactComponent as Visa } from "../assets/icons/visa.svg";
-import { ReactComponent as Business } from "../assets/icons/business.svg";
-import { ReactComponent as Investment } from "../assets/icons/investment.svg";
 
 import { ReactComponent as Member } from "../assets/business/Member.svg";
 import { ReactComponent as Accounts } from "../assets/business/accounts.svg";
 import { ReactComponent as Dissolution } from "../assets/business/Dissolution.svg";
 
 import Carousel from "../utils/carousel";
+import FindMore from "./findMore";
 
 export interface cardData {
     heading: string,
@@ -132,14 +125,7 @@ const BusinessPage = () => {
             </section>
 
 
-            <BackroundImage url={IsMobile() ? Section5UpperMobBg : Section5UpperBg} classes="space-y-9  bg-cover">
-                <div className=" space-y-6 px-16 py-20">
-                    <h5 className=" text-white text-left font-bold ">Find Out More About Our Service Offerings And How We Can Help You Access Your 20% Discount Off <br /> Our Services?</h5>
-                    <h5 className=" text-white text-left font-bold ">Register Online For One Of Our Service Offerings To Qualify For Your Discount</h5>
-                    <button className=" rounded border-2 border-yellow-secondary w-auto p-3 sm:bg-yellow-secondary">
-                        <p className="text-yellow-secondary sm:text-black font-semibold">Register Online Here Now</p></button>
-                </div>
-            </BackroundImage>
+            <FindMore />
 
         </>
     )

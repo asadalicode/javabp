@@ -13,6 +13,7 @@ import Section6UpperBg from "../assets/home/section5_upper_bg.png";
 import Section6UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
 
 import IsMobile from "../utils/detectDevice";
+import FindMore from "./findMore";
 
 const Citizenship = () => {
 
@@ -88,14 +89,7 @@ const Citizenship = () => {
             </section>
 
 
-            <BackroundImage url={IsMobile() ? Section6UpperMobBg : Section6UpperBg} classes="space-y-9  bg-cover">
-                <div className=" space-y-6 px-16 py-20">
-                    <h5 className=" text-white text-left font-bold ">Find Out More About Our Service Offerings And How We Can Help You Access Your 20% Discount Off <br /> Our Services?</h5>
-                    <h5 className=" text-white text-left font-bold ">Register Online For One Of Our Service Offerings To Qualify For Your Discount</h5>
-                    <button className=" rounded border-2 border-yellow-secondary w-auto p-3 sm:bg-yellow-secondary">
-                        <p className="text-yellow-secondary sm:text-black font-semibold">Register Online Here Now</p></button>
-                </div>
-            </BackroundImage>
+            <FindMore />
 
         </>
     );

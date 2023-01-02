@@ -8,6 +8,7 @@ import Company from '../pages/company';
 import Home from '../pages/home';
 import HomeContainer from '../pages/homeContainer';
 import Marketing from '../pages/marketing';
+import Payment from '../pages/payments';
 
 const routes = [
   {
@@ -17,7 +18,9 @@ const routes = [
       { path: "capitalInvestment", component: <CapitalInvestment /> },
       { path: "company", component: <Company /> },
       { path: "citizenship", component: <Citizenship /> },
-      { path: "marketing", component: <Marketing /> }
+      { path: "marketing", component: <Marketing /> },
+      { path: "payments", component: <Payment /> }
+
 
     ]
   },
