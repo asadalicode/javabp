@@ -12,7 +12,7 @@ import Marketing from '../pages/marketing';
 const routes = [
   {
     path: "/", component: <HomeContainer />, children: [
-      { path: "", component: <Home /> },
+      { path: "/", component: <Home /> },
       { path: "business", component: <BusinessPage /> },
       { path: "capitalInvestment", component: <CapitalInvestment /> },
       { path: "company", component: <Company /> },
