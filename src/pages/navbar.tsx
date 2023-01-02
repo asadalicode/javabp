@@ -19,13 +19,17 @@ const Header = () => {
             <div className="justify-between md:px-16 px-4 mx-auto ">
                 <div>
                     <div className="flex items-center justify-between py-5 ">
-                        <div onClick={() => setNavbar(!navbar)}>
+                        <div>
                             {navbar ? (
                                 // <div></div>
-                                <Logo_white className="md:hidden  h-full w-32" />
+                                <Link to={'/'} onClick={() => setNavbar(!navbar)}>
+                                    <Logo_white className="md:hidden  h-full w-32" />
+                                </Link>
 
                             ) : (
-                                <Logo className="h-full w-32 sm:w-24" />
+                                <Link to={'/'} onClick={() => setNavbar(false)}>
+                                    <Logo className="h-full w-32 sm:w-24" />
+                                </Link>
 
                             )}
                         </div>
@@ -54,7 +58,9 @@ const Header = () => {
                         className={`flex justify-between flex-1 py-10   ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <Logo_white onClick={() => setNavbar(!navbar)} className="sm:hidden" />
+                        <Link to={'/'} onClick={() => setNavbar(!navbar)}>
+                            <Logo_white onClick={() => setNavbar(!navbar)} className="sm:hidden" />
+                        </Link>
                         <ul className="items-center justify-center space-y-6  w-full  duration-300  ">
                             <h4 className="font-semibold  px-3 text-right  hover:text-yellow hover:underline">
                                 <Link to={'/business'} onClick={() => setNavbar(!navbar)}> Business, Financial & Legal Templates </Link>
@@ -67,10 +73,10 @@ const Header = () => {
                                 <Link to={'/company'} onClick={() => setNavbar(!navbar)}> Company Formation & Bank Account Opening </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Citizenship, Residency by Investment Options </Link>
+                                <Link to={'/citizenship'} onClick={() => setNavbar(!navbar)}> Citizenship, Residency by Investment Options </Link>
                             </h4>
                             <h4 className="font-semibold  text-right  px-3  hover:text-yellow hover:underline">
-                                <Link to={'/capitalInvestment'} onClick={() => setNavbar(!navbar)}> Business Consultancy & Marketing</Link>
+                                <Link to={'/marketing'} onClick={() => setNavbar(!navbar)}> Business Consultancy & Marketing</Link>
                             </h4>
                         </ul>
 

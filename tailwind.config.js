@@ -11,7 +11,8 @@ module.exports = {
       'yellow-secondary': '#FFAF3C',
       'black': '#000',
       'black-secondary': '#181313',
-      'gray-dark': '#4C4949'
+      'gray-dark': '#4C4949',
+      'gray': '#F0F0F0'
     },
     container: {
       padding: '2rem',
