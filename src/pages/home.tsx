@@ -44,7 +44,7 @@ const Home = () => {
                 </div>
             </BackroundImage>
 
-
+            {/*  */}
             <BackroundImage url={Section1Bg} classes="text-center space-y-9  bg-right">
                 <h2 className="font-bold pt-16">Our Services Offered</h2>
 
