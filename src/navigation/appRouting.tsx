@@ -13,11 +13,11 @@ const routes = [
   {
     path: "/", component: <HomeContainer />, children: [
       { path: "", component: <Home /> },
-      { path: "javabp/business", component: <BusinessPage /> },
-      { path: "javabp/capitalInvestment", component: <CapitalInvestment /> },
-      { path: "javabp/company", component: <Company /> },
-      { path: "javabp/citizenship", component: <Citizenship /> },
-      { path: "javabp/marketing", component: <Marketing /> }
+      { path: "business", component: <BusinessPage /> },
+      { path: "capitalInvestment", component: <CapitalInvestment /> },
+      { path: "company", component: <Company /> },
+      { path: "citizenship", component: <Citizenship /> },
+      { path: "marketing", component: <Marketing /> }
 
     ]
   },
