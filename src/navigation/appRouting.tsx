@@ -11,7 +11,7 @@ import Marketing from '../pages/marketing';
 
 const routes = [
   {
-    path: "/javabp", component: <HomeContainer />, children: [
+    path: "/", component: <HomeContainer />, children: [
       { path: "", component: <Home /> },
       { path: "business", component: <BusinessPage /> },
       { path: "capitalInvestment", component: <CapitalInvestment /> },
