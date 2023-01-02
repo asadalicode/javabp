@@ -46,7 +46,9 @@ h4 {
 h5 {
   font-size: clamp(0.63rem, calc(0.43rem + 1.00vw), 1.20rem);
 
-  @include for-phone-only {}
+  @include for-phone-only {
+    font-size: clamp(0.63rem, calc(0.63rem + 1vw), 1.20rem);
+  }
 }
 
 p {
@@ -54,7 +56,7 @@ p {
   margin-bottom: 0;
 
   @include for-phone-only {
-    font-size: clamp(0.63rem, calc(0.43rem + 1vw), 1.20rem);
+    font-size: clamp(0.63rem, calc(0.53rem + 1vw), 1.20rem);
   }
 
 }
