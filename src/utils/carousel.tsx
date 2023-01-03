@@ -104,11 +104,11 @@ const Carousel = (data: any) => {
                         return (
                             <div
                                 key={index}
-                                className="carousel-item flex  text-center relative snap-start"
+                                className="carousel-item flex  text-center relative snap-start w-full"
                             >
-                                <div className="p-6 space-y-4 bg-white w-80  rounded-2xl card-shadow ">
+                                <div className="p-6 space-y-4 bg-white w-80   rounded-2xl card-shadow ">
                                     {elem.icon}
-                                    <h5 className="mb-2 font-bold tracking-tight text-center text-black text-left max-w-xs">{elem.text}</h5>
+                                    <h5 className="mb-2 font-bold tracking-tight text-center text-black  max-w-xs">{elem.text}</h5>
                                 </div>
                             </div>
                         );
