@@ -111,7 +111,7 @@ const Home = () => {
                 <div className="space-y-4 pt-32 sm:pt-8   py-2">
                     <h2 className="font-bold">Why Work With Us?</h2>
                     <p className="text-gray-dark opacity-90 text-left tracking-wide">Convenience <br /> At work, at home - anywhere. <br /> Our form is available online, anytime:PC</p>
-                    <div className="py-4 w-fit border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
+                    <div className="py-4 sm:w-full w-4/6 border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Member className="w-14" />
                             <p className="text-black font-bold px-2 leading-tight">Tablet</p>
