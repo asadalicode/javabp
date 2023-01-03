@@ -163,7 +163,7 @@ const Payment = () => {
                             <div className="mb-6 grid grid-cols-1">
                                 <h5 className="block mb-2  font-semibold text-black">Which country are you currently located?
                                 </h5>
-                                <Field type="text" id="country" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${errors.country && errors.country ? 'border border-red' : ''} `} placeholder="John"
+                                <Field type="text" id="country" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.country && errors.country ? 'border border-red' : ''} `} placeholder="John"
                                     onChange={handleChange} onBlur={handleBlur} value={values.country}
                                 />
 
