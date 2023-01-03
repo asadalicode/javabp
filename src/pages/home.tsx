@@ -1,4 +1,3 @@
-import { useState } from "react";
 import BackroundImage from "../utils/backgroundImage";
 
 import TopBg from "../assets/home/1_web.png";
@@ -6,19 +5,13 @@ import TopMobileBg from "../assets/home/1_mobile.png";
 import Section1Bg from "../assets/home/section1_bg.svg";
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section2MobBg from "../assets/home/section2_mob_bg.png";
-
 import { ReactComponent as Member } from "../assets/business/Member.svg";
 import { ReactComponent as Accounts } from "../assets/business/accounts.svg";
 import { ReactComponent as Dissolution } from "../assets/business/Dissolution.svg";
-
-
-
 import Section3Bg from "../assets/home/Bg_yellow_right.svg";
 import Section2UpperBg from "../assets/home/section2_upper_bg.png";
 import Section3UpperBg from "../assets/home/section3_upper_bg.png";
 import Section4UpperBg from "../assets/home/section4_upper_bg.png";
-// import Section5UpperBg from "../assets/home/section5_upper_bg.png";
-// import Section5UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
 
 import Section4Bg from "../assets/home/2.svg";
 
@@ -30,7 +23,6 @@ import { ReactComponent as Business } from "../assets/icons/business.svg";
 import { ReactComponent as Investment } from "../assets/icons/investment.svg";
 
 import IsMobile from "../utils/detectDevice";
-import { Link } from "react-router-dom";
 import FindMore from "./findMore";
 
 const Home = () => {

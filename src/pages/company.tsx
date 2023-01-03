@@ -1,10 +1,7 @@
 import BackroundImage from "../utils/backgroundImage";
 import TopBg from "../assets/company/hero_bg.png";
-import TopMobileBg from "../assets/capital/HeroBanner.svg";
+import TopMobileBg from "../assets/company/HeroBanner.png";
 import BgYellowLeft from "../assets/company/bgYellowLeft.svg";
-import BgYellowRight from "../assets/home/Bg_yellow_right.svg";
-
-import Section1Bg from "../assets/home/section1_bg.svg";
 import Section4Bg from "../assets/company/Group278.png";
 import Section5Bg from "../assets/company/Group315.png";
 import Section6Bg from "../assets/company/Group301.png";
@@ -13,9 +10,6 @@ import Section8Bg from "../assets/company/Group316.png";
 
 import Section2UpperBg from "../assets/capital/Group959.jpg";
 import Section3UpperBg from "../assets/company/Group36.png";
-import Section5UpperBg from "../assets/home/section5_upper_bg.png";
-import Section5UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
-
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
 

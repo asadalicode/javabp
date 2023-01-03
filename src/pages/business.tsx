@@ -1,19 +1,13 @@
 import BackroundImage from "../utils/backgroundImage";
 import IsMobile from "../utils/detectDevice";
 import TopBg from "../assets/business/HeroBanner.svg";
-import TopMobileBg from "../assets/home/1_mobile.png";
+import TopMobileBg from "../assets/business/HeroBanner.png";
 import Section1Bg from "../assets/home/section1_bg.svg";
-
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section3Bg from "../assets/home/Bg_yellow_right.svg";
-
 import Section2UpperBg from "../assets/business/Strategic&Operational.svg";
 import Section3UpperBg from "../assets/business/financial.png";
-
-import Section5UpperBg from "../assets/home/section5_upper_bg.png";
-import Section5UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
 import { ReactComponent as IconCompany } from "../assets/icons/company.svg";
-
 import { ReactComponent as Member } from "../assets/business/Member.svg";
 import { ReactComponent as Accounts } from "../assets/business/accounts.svg";
 import { ReactComponent as Dissolution } from "../assets/business/Dissolution.svg";
@@ -25,9 +19,6 @@ export interface cardData {
     heading: string,
     icon: any,
     text: string,
-
-
-
 }
 
 const cardData: cardData[] = [

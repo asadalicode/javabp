@@ -1,17 +1,13 @@
 import BackroundImage from "../utils/backgroundImage";
 import TopBg from "../assets/citizenship/heroBg.png";
-import TopMobileBg from "../assets/citizenship/heroBg.png";
+import TopMobileBg from "../assets/citizenship/heroBg_mbl.png";
 import BgYellowLeft from "../assets/company/bgYellowLeft.svg";
 import BgYellowRight from "../assets/citizenship/bgRightLayer.svg";
 import GoldenVisa from "../assets/citizenship/GoldenVisa.png";
 import Section2UpperBg from "../assets/citizenship/Group282.png";
-import Section3UpperBg from "../assets/citizenship/Group299.png";
 import Section4UpperBg from "../assets/citizenship/Group36.png";
 
 import Section5UpperBg from "../assets/citizenship/Group600.png";
-import Section6UpperBg from "../assets/home/section5_upper_bg.png";
-import Section6UpperMobBg from "../assets/home/section5_upper_mob_bg.png";
-
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
 
@@ -29,7 +25,7 @@ const Citizenship = () => {
             </BackroundImage>
 
 
-            <section className="grid grid-cols-2 mt-16  sm:grid-cols-1 bg-white">
+            <section className="grid grid-cols-2 mt-16 sm:mt-0   sm:grid-cols-1 bg-white">
 
                 <div className="space-y-4 w-11/12 pt-16 sm:pt-8 pl-16 sm:px-8 ">
                     <h2 className="font-bold">Our Bespoke Services Taylored To Meet Your Needs</h2>

@@ -89,12 +89,8 @@ p {
     transform: translate(-50%, -50%);
 
     @include for-phone-only {
-      top: 18%;
-      padding: 1.4em;
-      transform: translate(0%);
-      left: 0;
-      padding: 1.4em;
-
+      top: 35%;
+      width: 80%;
     }
 
 
@@ -153,7 +149,9 @@ p {
 
     @include for-phone-only {
       @include bg-position-top;
-      height: 55%;
+      // height: 86%;
+      height: 60%;
+
     }
   }
 
