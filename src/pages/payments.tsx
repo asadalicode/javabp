@@ -1,6 +1,7 @@
 import BackroundImage from "../utils/backgroundImage";
 import TopBg from "../assets/capital/HeroBanner.svg";
-import TopMobileBg from "../assets/capital/HeroBanner.svg";
+import TopMobileBg from "../assets/marketing/HeroBanner_mbl.png";
+
 
 
 import IsMobile from "../utils/detectDevice";
@@ -55,7 +56,7 @@ const Payment = () => {
             </BackroundImage>
 
 
-            <section className="px-16  bg-gray">
+            <section className="px-16 sm:px-8 bg-gray">
                 <h2 className="font-bold pt-16 text-center pb-6">Consulting, Strategy & Marketing Support Registration
                 </h2>
 
