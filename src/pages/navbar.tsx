@@ -15,7 +15,7 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className={`w-full bg-white fixed z-10  ${navbar ? "nav_bg" : ""}`}>
+        <nav className={`w-full bg-white fixed z-10  ${navbar ? "nav_bg bg-black  text-white vh-100" : ""}`}>
             <div className="justify-between md:px-16 px-4 mx-auto ">
                 <div>
                     <div className="flex items-center justify-between py-5 ">
