@@ -23,7 +23,7 @@ const FormSchema = Yup.object().shape({
     firstName: Yup.string().label('First Name').required(),
     lastName: Yup.string().label('Last Name').required(),
     companyName: Yup.string().label('Company Name').required(),
-    email: Yup.string().label('Email').required(),
+    email: Yup.string().email().label('Email').required(),
     services: Yup.array().label('one sss').min(1).label('one sss'),
     country: Yup.string().label('Country').required(),
     termsOfService: Yup
@@ -74,7 +74,7 @@ const Payment = () => {
                             <div className="grid gap-6 mb-6 md:grid-cols-2">
                                 <div>
                                     <label className="block mb-2 text-sm font-semibold text-black">First name</label>
-                                    <Field type="text" id="firstName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.firstName && errors.firstName ? 'border border-red' : ''} `} placeholder="John"
+                                    <Field type="text" id="firstName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.firstName && errors.firstName ? 'border border-red' : ''} `} placeholder="Enter..."
                                         onChange={handleChange} onBlur={handleBlur} value={values.firstName}
                                     />
                                     {/* {errors.firstName && touched.firstName && (
@@ -83,7 +83,7 @@ const Payment = () => {
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-sm font-semibold text-black">Last name</label>
-                                    <Field type="text" id="lastName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.lastName && errors.lastName ? 'border border-red' : ''} `} placeholder="John"
+                                    <Field type="text" id="lastName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.lastName && errors.lastName ? 'border border-red' : ''} `} placeholder="Enter..."
                                         onChange={handleChange} onBlur={handleBlur} value={values.lastName}
                                     />
                                     {/* {errors.lastName && touched.lastName && (
@@ -94,7 +94,7 @@ const Payment = () => {
 
                                 <div>
                                     <label className="block mb-2 text-sm font-semibold text-black">Company name</label>
-                                    <Field type="text" id="companyName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.companyName && errors.companyName ? 'border border-red' : ''} `} placeholder="John"
+                                    <Field type="text" id="companyName" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.companyName && errors.companyName ? 'border border-red' : ''} `} placeholder="Enter..."
                                         onChange={handleChange} onBlur={handleBlur} value={values.companyName}
                                     />
                                     {/* {errors.companyName && touched.companyName && (
@@ -105,7 +105,7 @@ const Payment = () => {
 
                                 <div>
                                     <label className="block mb-2 text-sm font-semibold text-black">Email</label>
-                                    <Field type="text" id="email" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.email && errors.email ? 'border border-red' : ''} `} placeholder="John"
+                                    <Field type="email" id="email" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.email && errors.email ? 'border border-red' : ''} `} placeholder="Enter..."
                                         onChange={handleChange} onBlur={handleBlur} value={values.email}
                                     />
                                     {/* {errors.email && touched.email && (
@@ -163,7 +163,7 @@ const Payment = () => {
                             <div className="mb-6 grid grid-cols-1">
                                 <h5 className="block mb-2  font-semibold text-black">Which country are you currently located?
                                 </h5>
-                                <Field type="text" id="country" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.country && errors.country ? 'border border-red' : ''} `} placeholder="John"
+                                <Field type="text" id="country" className={`focus:outline-yellow-secondary  text-sm rounded-lg block w-full p-3 ${touched.country && errors.country ? 'border border-red' : ''} `} placeholder="Enter..."
                                     onChange={handleChange} onBlur={handleBlur} value={values.country}
                                 />
 
