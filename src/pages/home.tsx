@@ -114,15 +114,15 @@ const Home = () => {
                     <div className="py-4 w-fit border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Member className="w-14" />
-                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                            <p className="text-black font-bold px-2 leading-tight">Tablet</p>
                         </div>
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Accounts className="w-14" />
-                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                            <p className="text-black font-bold px-2 leading-tight">Notebook</p>
                         </div>
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Dissolution className="w-14" />
-                            <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
+                            <p className="text-black font-bold px-2 leading-tight">Mobile</p>
                         </div>
                     </div>
                     <p className="text-gray-dark opacity-90 text-left tracking-wide">No matter what device you're on! <br /> Ease and simplicity at your fingertips! <br /> Expertise <br /> We take a personal approach to each customer. Our customers <br /> consistently see increased satisfaction, enhanced lifestyle and new <br /> opportunities <br /> Cost Effective <br /> An inclusive, one-time, non-refundable registration fee applies to all <br /> registrations. <br /> This must be paid at the time of your application via credit or debit card for your convenience.</p>
