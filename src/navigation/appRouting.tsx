@@ -4,6 +4,7 @@ import BusinessPage from '../pages/business';
 import CapitalInvestment from '../pages/capital';
 import Citizenship from '../pages/citizenship';
 import Company from '../pages/company';
+import Contact from '../pages/contact';
 
 import Home from '../pages/home';
 import HomeContainer from '../pages/homeContainer';
@@ -19,7 +20,9 @@ const routes = [
       { path: "company", component: <Company /> },
       { path: "citizenship", component: <Citizenship /> },
       { path: "marketing", component: <Marketing /> },
-      { path: "payments", component: <Payment /> }
+      { path: "payments", component: <Payment /> },
+      { path: "contact", component: <Contact /> },
+
 
 
     ]

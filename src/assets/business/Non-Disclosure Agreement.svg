@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="Non-Disclosure_Agreement" data-name="Non-Disclosure Agreement" transform="translate(-2741 1214)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="55" cy="55" r="55" transform="translate(2741 -1214)" fill="#f9ab3e"/>
+    <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(2774 -1181)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="44" height="44" stroke="none"/>
+      <rect x="0.5" y="0.5" width="43" height="43" fill="none"/>
+    </g>
+    <g id="contract_1_" data-name="contract (1)" transform="translate(2773.945 -1181)">
+      <path id="Path_2157" data-name="Path 2157" d="M8.119,1.985,2.04,8.064H8.119Z" transform="translate(-1.814 -1.814)"/>
+      <path id="Path_2158" data-name="Path 2158" d="M430.827,88.392,429,86.569l-3.1,3.1a1.444,1.444,0,0,0-1.071.422L423.2,91.723l2.473,2.473,1.631-1.631a1.44,1.44,0,0,0,.425-1.025c0-.016,0-.031,0-.047Z" transform="translate(-386.781 -79.129)"/>
+      <path id="Path_2159" data-name="Path 2159" d="M0,0H21.471V3.5H0Z" transform="translate(19.409 29.599) rotate(-45)"/>
+      <path id="Path_2160" data-name="Path 2160" d="M189.724,367.728l-1.549,3.662,3.662-1.549Z" transform="translate(-171.953 -336.126)"/>
+      <path id="Path_2161" data-name="Path 2161" d="M13.686,39.135l-2.194-2.193L9.535,38.9H4.163V36.321h4.3L11.492,33.3l1.941,1.941,2.422-5.727,3.821-3.821H5.689V23.111H22.255l2.9-2.9H5.689V17.634H27.733l5.654-5.654V0H8.883V8.828H.055V44H33.386V24.217L21.975,35.629ZM9.545,12.156H23.9v2.578H9.545Z"/>
+    </g>
+  </g>
+</svg>

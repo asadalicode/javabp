@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path1200" d="M0-682.665H44.267V-638.4H0Z" transform="translate(0 682.665)"/>
+    </clipPath>
+  </defs>
+  <g id="Divorce_And_Legal_Separation" data-name="Divorce And Legal Separation" transform="translate(-0.5)">
+    <circle id="Ellipse_116" data-name="Ellipse 116" cx="55" cy="55" r="55" transform="translate(0.5)" fill="#f9ab3e"/>
+    <g id="g1194" transform="translate(33.5 715.665)">
+      <g id="g1196" transform="translate(0 -682.665)">
+        <g id="g1198" clip-path="url(#clip-path)">
+          <g id="g1204" transform="translate(0 2.688)">
+            <path id="path1206" d="M-262.235-240.831l5.96-6.829-5.808-8.68a12.162,12.162,0,0,0-5.429-1.19,12.921,12.921,0,0,0-12.906,12.906c0,3.612,1.822,7.19,5.908,11.6,4.48,4.838,9.083,9.136,12.155,11.89l2.778,2.49-1.8-10.445,5.025-5.067Z" transform="translate(280.418 257.53)"/>
+          </g>
+          <g id="g1208" transform="translate(22.064 2.688)">
+            <path id="path1210" d="M-134.075,0a12.6,12.6,0,0,0-8.545,3.158l5.018,7.628-4.715,5.9,5.194,6.09-6.249,6.3,1.47,9.689,1.784-1.579c2.693-2.383,7.967-7.2,13.04-12.679,4.086-4.413,5.908-7.991,5.908-11.6A12.921,12.921,0,0,0-134.075,0" transform="translate(143.372)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

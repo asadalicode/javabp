@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="Last_Will_And_Testament" data-name="Last Will And Testament" transform="translate(-0.5)">
+    <circle id="Ellipse_110" data-name="Ellipse 110" cx="55" cy="55" r="55" transform="translate(0.5)" fill="#f9ab3e"/>
+    <g id="testament" transform="translate(27.45 33)">
+      <path id="Path_2851" data-name="Path 2851" d="M33.367,35.688H25.876V30.446H10.044V27.852H26.413l3.229-3.229h-19.6V22.029H32.236L35.465,18.8H10.044V16.206H35.779v2.28l4.372-4.372V0H6.05V36.213h7.569v8.056H40.15V28.905ZM19.153,5.818H21.8V3.1h2.6V5.818h2.65V8.412H24.4v5.1H21.8v-5.1H19.15ZM35.779,41.024h-9.9V38.43h9.9Z"/>
+      <path id="Path_2852" data-name="Path 2852" d="M6.05,448.827l4.976,5.462v-5.462Z" transform="translate(0 -410.021)"/>
+      <path id="Path_2853" data-name="Path 2853" d="M266.46,217.2h3.727l11.942-11.942L278.4,201.53l-11.94,11.942Z" transform="translate(-237.895 -184.105)"/>
+      <path id="Path_2854" data-name="Path 2854" d="M429.059,144.472l-.919-.919L425.8,145.9l3.727,3.727,2.343-2.343-.974-.974,1.834-1.834-1.834-1.834Z" transform="translate(-383.455 -130.305)"/>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 import BackroundImage from "../utils/backgroundImage";
 
-import TopBg from "../assets/home/1_web.png";
-import TopMobileBg from "../assets/home/1_mobile.png";
+import TopBg from "../assets/home/Hero_bg.png";
+import TopMobileBg from "../assets/home/Hero_bg_mbl.png";
 import Section1Bg from "../assets/home/section1_bg.svg";
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section2MobBg from "../assets/home/section2_mob_bg.png";
@@ -32,7 +32,7 @@ const Home = () => {
             <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">JAVA Business Partnership International</h1>
-                    <p className=" text-white opacity-70">Our Partnerships with Global Companies connects You the Business Owner to Products and Services at huge discounted rates that you would not necessarily have access to. We have done all the work for you, by connecting your Business to the World. Our partners have been in business collectively for over 50 years, Java Business Partners International brings expertise and services to you with Pride.</p>
+                    <p className=" text-white opacity-70">Our global partnerships connects you to difficult to access products and services at huge discounted rates. Collectively, with over 50 years of providing exceptional service, Java Business Partners is able to connect solve your business or personal need, and connect you to our global partners within a number of hours.</p>
                     <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
@@ -46,38 +46,40 @@ const Home = () => {
                 <div className="grid grid-cols-3 sm:grid-cols-1 gap-10 px-16 sm:px-8">
                     <div className="p-6 space-y-4 bg-white  rounded-2xl card-shadow ">
                         <IconCompany className="h-16 w-auto" />
-                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Company Formations (Both Local and Offshore)</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Company Formations (Local and Offshore)</h5>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Regardless of location we can establish a team within 24 years to assist in your company. Formation. We offer a remote and fast application process at discounted rates.</p>
                     </div>
 
                     <div className=" p-6 space-y-4 bg-white rounded-2xl card-shadow ">
                         <IconBank className="h-16 w-auto" />
-                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Company Bank Account Openings Remotely</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Remote Company Bank Account Opening</h5>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">From the start of the application process, we aim to have your bank account up and running within a 10 day period. While maintaining a cost effective strategy, We work with over 100 Private Investors monthly who specialize in non-traditional funding for clients who need a fast turnaround.</p>
                     </div>
 
                     <div className=" p-6 space-y-4 bg-white rounded-2xl  card-shadow ">
                         <Plain className="h-16 w-auto" />
                         <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Citizenship And Residency By Investment</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Looking to get away? Hire an expert to assist you in every step of the process! Get connected with an agent who can help advise you on required contracts and legal obligations.</p>
                     </div>
 
                     <div className=" p-6 space-y-4 bg-white rounded-2xl  card-shadow ">
                         <Visa className="h-16 w-auto" />
-                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Golden Visa And 2Nd Passport Programs Applications</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Golden Visa And 2nd Passport Programs Applications</h5>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">We offer 100 countries worldwide and 18 different program options.
+                            Golden Visas facilitates the acquisition of residency, immigration and citizenship through investment. We make what looks like an expensive and difficult option, affordable
+                            and complex free</p>
                     </div>
 
                     <div className=" p-6 space-y-4 bg-white rounded-2xl  card-shadow ">
                         <Business className="h-16 w-auto" />
                         <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Business, Financial, And Legal Documents And Templates</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Ready to start a business? We can help you form your LLC, obtain your tax ID number (EIN) and designate a registered agent. Have 24/7 remote access on your smartphone or computer.</p>
                     </div>
 
                     <div className=" p-6 space-y-4 bg-white rounded-2xl  card-shadow ">
                         <Investment className="h-16 w-auto" />
                         <h5 className="mb-2 font-bold tracking-tight text-black text-left max-w-xs">Private Investment And Business Funding Options</h5>
-                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
+                        <p className="text-gray-dark opacity-90 text-left tracking-tight">Need a one-stop shop for your financing needs? Access venture capital, private equity, private investors or business partners that want to invest in your business!</p>
                     </div>
                 </div>
 

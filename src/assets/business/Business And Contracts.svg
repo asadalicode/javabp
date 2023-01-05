@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="Business_And_Contracts" data-name="Business And Contracts" transform="translate(3159.5 -14981.5)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="55" cy="55" r="55" transform="translate(-3159.5 14981.5)" fill="#f9ab3e"/>
+    <g id="Group_132" data-name="Group 132" transform="translate(-5430.5 13673.5)">
+      <g id="Group_103" data-name="Group 103" opacity="0">
+        <path id="Path_2103" data-name="Path 2103" d="M.23,456.894a1.269,1.269,0,0,0,1.059.589H42.711a1.269,1.269,0,0,0,1.059-.589,1.442,1.442,0,0,0,.149-1.262A11.48,11.48,0,0,0,42.1,452.48a1.257,1.257,0,0,0-.978-.479H2.883a1.257,1.257,0,0,0-.978.479,11.482,11.482,0,0,0-1.823,3.152,1.441,1.441,0,0,0,.149,1.262Z" transform="translate(2304 927.517)"/>
+        <path id="Path_2104" data-name="Path 2104" d="M60,241h8.315v16.538H60Z" transform="translate(2249.482 1119.995)"/>
+        <path id="Path_2105" data-name="Path 2105" d="M211,241h8.223v16.538H211Z" transform="translate(2110.888 1119.995)"/>
+        <path id="Path_2106" data-name="Path 2106" d="M361,241h8.315v16.538H361Z" transform="translate(1973.203 1119.995)"/>
+        <path id="Path_2107" data-name="Path 2107" d="M2.79,156.08a1.265,1.265,0,0,0,.912.4H40.3a1.264,1.264,0,0,0,.912-.4A12.085,12.085,0,0,0,44,151H0a12.085,12.085,0,0,0,2.79,5.08Z" transform="translate(2304 1202.867)"/>
+        <path id="Path_2108" data-name="Path 2108" d="M51.8,11.056,31.25.145a1.217,1.217,0,0,0-1.15,0L9.547,11.056Z" transform="translate(2295.325 1341)"/>
+      </g>
+      <g id="graph" transform="translate(2300.95 1337.551)">
+        <path id="Path_2143" data-name="Path 2143" d="M46.255,6.45l-9.17.416a.757.757,0,0,0-.5,1.287l1.84,1.84L19.019,24.38l-8.632-10.6a.757.757,0,0,0-1.09-.091l-5.989,5.3a.757.757,0,0,0-.257.568v6.057a.757.757,0,0,0,1.257.568L9.713,21.4l8.549,10.578a.757.757,0,0,0,1.045.121L42.84,14.438l2.484,2.484a.757.757,0,0,0,1.295-.5l.432-9.207a.757.757,0,0,0-.8-.765Z"/>
+        <rect id="Rectangle_22" data-name="Rectangle 22" width="6.815" height="15.144" rx="1" transform="translate(3.769 28.825)"/>
+        <rect id="Rectangle_23" data-name="Rectangle 23" width="6.815" height="9.086" rx="1" transform="translate(15.884 34.882)"/>
+        <rect id="Rectangle_24" data-name="Rectangle 24" width="6.815" height="15.144" rx="1" transform="translate(27.999 28.825)"/>
+        <rect id="Rectangle_25" data-name="Rectangle 25" width="6.815" height="23.473" rx="1" transform="translate(39.357 20.495)"/>
+      </g>
+    </g>
+  </g>
+</svg>
