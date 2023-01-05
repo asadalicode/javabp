@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Section5UpperBg from "../assets/footer/ocean-waves-crashing.png";
 import Section5UpperMobBg from "../assets/footer/ocean-waves-crashing_mbl.png";
+import PayPalPayment from "./payPal";
 
 const FindMore = () => {
 
@@ -15,7 +16,9 @@ const FindMore = () => {
                     <h5 className=" text-white text-left font-bold ">Register Online For One Of Our Service Offerings To Qualify For Your Discount</h5>
                     <Link to="/payments" >
                         <button className=" rounded border-2 border-yellow-secondary w-auto mt-3 p-3 sm:bg-yellow-secondary">
-                            <p className="text-yellow-secondary sm:text-black font-semibold">Register Online Here Now</p></button>
+                            <p className="text-yellow-secondary sm:text-black font-semibold">Register Online Here Now</p>
+                        </button>
+
                     </Link>
                 </div>
             </BackroundImage>

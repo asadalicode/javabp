@@ -29,6 +29,7 @@ const Home = () => {
 
     return (
         <>
+
             <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">JAVA Business Partnership International</h1>
@@ -41,7 +42,6 @@ const Home = () => {
             {/*  */}
             <BackroundImage url={Section1Bg} classes="text-center space-y-9  bg-right">
                 <h2 className="font-bold pt-16">Our Services Offered</h2>
-
 
                 <div className="grid grid-cols-3 sm:grid-cols-1 gap-10 px-16 sm:px-8">
                     <div className="p-6 space-y-4 bg-white  rounded-2xl card-shadow ">
