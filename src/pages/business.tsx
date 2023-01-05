@@ -120,7 +120,7 @@ const BusinessPage = () => {
                 <div className="space-y-4 pt-16 sm:pt-8 pl-16 sm:pl-0  py-2">
                     <h2 className="font-bold">Why Work With Us?</h2>
                     <p className="text-gray-dark opacity-90 text-left tracking-wide">Convenience <br /> At work, at home - anywhere. <br /> Our form is available online, anytime:PC</p>
-                    <div className="py-4 w-fit border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
+                    <div className="py-4 sm:w-full w-10/12 border-2 border-dashed border-yellow-secondary grid grid-cols-3 gap-2">
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Member className="w-14" />
                             <p className="text-black font-bold px-2 leading-tight">Member contributions</p>
@@ -131,9 +131,10 @@ const BusinessPage = () => {
                         </div>
                         <div className=" text-center justify-items-center grid space-y-1 justify-center">
                             <Dissolution className="w-14" />
-                            <p className="text-black font-bold px-2 leading-tight">Dissolution </p>
+                            <p className="text-black font-bold px-2 leading-tight">Dissolution</p>
                         </div>
                     </div>
+
                     <p className="text-gray-dark opacity-90 text-left tracking-wide leading-snug w-4/6 sm:w-fit">And a good Business Plan generally includes: <br /> A clear description of your product or service <br /> Who the stakeholders are and their roles <br /> A researched marketing plan <br /> A financial plan <br /> While in some cases a handshake agreement may be proven valid if it needs to be enforced, it is better to have a written agreement. Some laws require written contracts, such as certain real estate transactions. Additionally, there are laws that require contracts for agreements that may last longer than one year. <br /> A sample list of business agreements you should get in writing: <br /> Any real estate sales contract <br /> Commercial and residential lease agreements <br /> Sales agreements for large purchases <br /> Service agreements for costly jobs <br /> Partnerships or joint venture agreements <br /> Loan and investment contracts Agreements that last longer <br /> than a year Agreements that last past the death of one of parties</p>
 
                 </div>
