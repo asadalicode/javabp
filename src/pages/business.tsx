@@ -28,15 +28,15 @@ import { ReactComponent as Children } from "../assets/business/Children.svg"
 import { ReactComponent as Business } from "../assets/business/Business.svg"
 import { ReactComponent as Incorporation } from "../assets/business/Incorporation.svg"
 import { ReactComponent as LLC } from "../assets/business/LLC.svg"
-// import { ReactComponent as RunningABusinessCompliance } from "../assets/business/Running A Business / Compliance.svg"
-// import { ReactComponent as IntellectualPropertyAndLicensing } from "../assets/business/Intellectual Property And Licensing.svg"
-// import { ReactComponent as LabourAndEmployment } from "../assets/business/Labour And Employment.svg"
-// import { ReactComponent as PropertyAndFinance } from "../assets/business/Property And Finance.svg"
-// import { ReactComponent as RealEstateLeasing } from "../assets/business/Real Estate & Leasing.svg"
-// import { ReactComponent as Eviction } from "../assets/business/Eviction.svg"
-// import { ReactComponent as LendingAndBorrowing } from "../assets/business/Lending And Borrowing.svg"
-// import { ReactComponent as DebtCollection } from "../assets/business/Debt Collection.svg"
-// import { ReactComponent as Tax } from "../assets/business/Tax.svg"
+import { ReactComponent as RunningABusinessCompliance } from "../assets/business/Running A Business - Compliance.svg"
+import { ReactComponent as IntellectualPropertyAndLicensing } from "../assets/business/Intellectual Property And Licensing.svg"
+import { ReactComponent as LabourAndEmployment } from "../assets/business/Labor And Employment.svg"
+import { ReactComponent as PropertyAndFinance } from "../assets/business/Property & Finance.svg"
+import { ReactComponent as RealEstateLeasing } from "../assets/business/Real Estate & Leasing.svg"
+import { ReactComponent as Eviction } from "../assets/business/Eviction.svg"
+import { ReactComponent as LendingAndBorrowing } from "../assets/business/Lending And Borrowing.svg"
+import { ReactComponent as DebtCollection } from "../assets/business/Debt Collection.svg"
+import { ReactComponent as Tax } from "../assets/business/Tax.svg"
 
 import { ReactComponent as Member } from "../assets/business/Member.svg";
 import { ReactComponent as Accounts } from "../assets/business/accounts.svg";
@@ -73,15 +73,15 @@ const cardData: cardData[] = [
     { heading: '', icon: <Business className="h-16 w-full" />, text: 'Business' },
     { heading: '', icon: <Incorporation className="h-16 w-full" />, text: 'Incorporation' },
     { heading: '', icon: <LLC className="h-16 w-full" />, text: 'LLC' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Running A Business / Compliance' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Intellectual Property And Licensing' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Labour And Employment' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Property And Finance' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Real Estate & Leasing' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Eviction' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Lending And Borrowing' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Debt Collection' },
-    { heading: '', icon: <BusinessAndContracts className="h-16 w-full" />, text: 'Tax' },
+    { heading: '', icon: <RunningABusinessCompliance className="h-16 w-full" />, text: 'Running A Business / Compliance' },
+    { heading: '', icon: <IntellectualPropertyAndLicensing className="h-16 w-full" />, text: 'Intellectual Property And Licensing' },
+    { heading: '', icon: <LabourAndEmployment className="h-16 w-full" />, text: 'Labour And Employment' },
+    { heading: '', icon: <PropertyAndFinance className="h-16 w-full" />, text: 'Property And Finance' },
+    { heading: '', icon: <RealEstateLeasing className="h-16 w-full" />, text: 'Real Estate & Leasing' },
+    { heading: '', icon: <Eviction className="h-16 w-full" />, text: 'Eviction' },
+    { heading: '', icon: <LendingAndBorrowing className="h-16 w-full" />, text: 'Lending And Borrowing' },
+    { heading: '', icon: <DebtCollection className="h-16 w-full" />, text: 'Debt Collection' },
+    { heading: '', icon: <Tax className="h-16 w-full" />, text: 'Tax' },
 ]
 const BusinessPage = () => {
     return (
