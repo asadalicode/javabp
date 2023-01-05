@@ -227,6 +227,7 @@ const Payment = () => {
                                 </div>
                                 {/*body*/}
                                 <div className="relative p-6 grid grid-cols-1">
+                                    <h5 className="text-right font-bold">TOTAL: $40.00</h5>
                                     <div>
                                         <p className="font-bold">PayPal:</p>
                                         <PayPal />
