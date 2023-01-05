@@ -74,7 +74,7 @@ const Payment = () => {
                         validationSchema={FormSchema}
                         onSubmit={handleSubmit}
                     >{({ errors, handleChange, handleBlur, touched, values }) => (
-                        <Form onSubmit={handleSubmit}>
+                        <Form>
                             <div className="grid gap-6 mb-6 md:grid-cols-2">
                                 <div>
                                     <label className="block mb-2 text-sm font-semibold text-black">First name</label>
