@@ -139,7 +139,7 @@ const Home = () => {
                             The 21 century has changed the way people do business and live. <br /> Looking for the ultimate Lifestyle, low tax rates, or a visa <br /> that enables visa free travel to over 150 <br /> countries - We are your partner of choice! <br /> Whether you are doing business in Europe, Asia, Africa, <br /> the Middle East, the Americas or elsewhere, <br /> our partners will set up the best trading or holding <br /> structure for your business in line with <br /> local laws and regulations. Our professional <br /> services include but are not limited to <br /> the following. We provide expertise <br /> and support to help you: Conduct business in  the global market smoothly Maximize opportunities <br /> and achieve long-term sustainability Reduced <br /> taxation Secure intellectual property <br /> Fewer restrictions Access to tax <br /> treaties Enhanced assets Political stability <br /> We provide expertise and support conducting business in global <br /> market smoothly, maximize opportunities and achieve long-term sustainability
                         </p>
                     </div>
-                    <img className="sm:hidden hover:opacity-75" src={Section4UpperBg} />
+                    <img className="sm:hidden hover:opacity-50" src={Section4UpperBg} />
 
                 </section>
 
