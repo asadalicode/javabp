@@ -22,9 +22,11 @@ const PayPalPayment = () => {
     };
 
     const onApprove = (data: any, actions: any) => {
-        console.log("data:", data)
-        console.log("actions:", actions)
-        return actions.order.capture();
+        return actions.order.capture().then((orderData: any) => {
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            const transaction = orderData.purchase_units[0].payments.captures[0];
+            console.log(`Transaction ${transaction}`);
+        });
     };
 
     return (
