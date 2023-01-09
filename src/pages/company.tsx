@@ -113,7 +113,7 @@ const Company = () => {
             </section>
 
 
-            <FindMore />
+            <FindMore url={'/companyTemplate'} />
 
         </>
     );

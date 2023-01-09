@@ -146,7 +146,7 @@ const BusinessPage = () => {
             </section>
 
 
-            <FindMore />
+            <FindMore url={'/businessTemplate'} />
 
         </>
     )

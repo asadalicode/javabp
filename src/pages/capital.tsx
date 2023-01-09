@@ -130,7 +130,8 @@ const CapitalInvestment = () => {
             </BackroundImage>
 
 
-            <FindMore />
+            <FindMore url={'/businessConsultancyTemplate'} />
+
 
         </>
     );
