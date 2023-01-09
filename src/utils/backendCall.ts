@@ -15,7 +15,7 @@ export const backendCall = async (
   };
 
   let _response = "";
-  await axios(process.env.REACT_APP_BaseUrl + url, {
+  await axios('https://javabp-backend.herokuapp.com' + url, {
     method: method,
     data: data,
     headers: _headers,
