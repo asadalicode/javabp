@@ -6,11 +6,14 @@ import {
     useStripe,
     useElements,
 } from '@stripe/react-stripe-js';
+import { backendCall } from '../utils/backendCall';
+import { useNavigate } from "react-router-dom";
 
 
 
 
-const CheckoutForm = () => {
+
+const CheckoutForm = ({ to, formData }: any) => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -24,10 +27,118 @@ const CheckoutForm = () => {
 
         stripe?.createToken(cardElement).then((res) => {
             console.log(res)
+            createStripeCheckout(res.token)
+
         }).catch((error) => {
             console.log(error)
         });
     };
+
+
+
+
+
+    let navigate = useNavigate();
+
+
+
+
+
+    const createStripeCheckout = (token: any) => {
+        const data: any = {
+            url: '/createCharge',
+            method: 'POST',
+            data: token,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                sendEmail(to, formData)
+            }
+        })
+    }
+
+    const sendEmail = (to: string, formData: any) => {
+        switch (to) {
+            case 'CitizenshipTemplateEmail':
+                sendCitizenshipTemplateEmail(formData);
+                break
+
+            case 'BusinessConsultancyTemplateEmail':
+                sendBusinessConsultancyTemplateEmail(formData);
+                break
+            case 'BusinessTemplateEmail':
+                sendBusinessTemplateEmail(formData);
+                break
+
+            case 'CompanyTemplateEmail':
+                sendCompanyTemplateEmail(formData);
+                break
+
+
+            case 'default':
+                return 0
+        }
+    }
+
+
+    const sendCitizenshipTemplateEmail = (formData: any) => {
+        const data: any = {
+            url: '/sendCitizenshipTemplate',
+            method: 'POST',
+            data: formData,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                console.log(res)
+
+                return navigate("/success");
+            }
+        })
+    }
+
+    const sendBusinessConsultancyTemplateEmail = (formData: any) => {
+        const data: any = {
+            url: '/sendCapitalInvestmentTemplate',
+            method: 'POST',
+            data: formData,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                return navigate("/success");
+            }
+        })
+    }
+
+    const sendBusinessTemplateEmail = (formData: any) => {
+        const data: any = {
+            url: '/sendBusinessTemplate',
+            method: 'POST',
+            data: formData,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                return navigate("/success");
+            }
+        })
+    }
+
+    const sendCompanyTemplateEmail = (formData: any) => {
+        const data: any = {
+            url: '/sendCompanyTemplate',
+            method: 'POST',
+            data: formData,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                return navigate("/success");
+            }
+        })
+    }
 
     return (
         <form onSubmit={handleSubmit}>
@@ -56,13 +167,17 @@ const CheckoutForm = () => {
 };
 const stripePromise = loadStripe(`${process.env.REACT_APP_Stripe_Client_ID}`);
 
-const StripePay = () => {
+const StripePay = ({ to, formData }: any) => {
+
     return (
         <>
             <Elements stripe={stripePromise}>
-                <CheckoutForm />
+                <CheckoutForm to={to} formData={formData} />
             </Elements>
         </>
     )
 }
 export default StripePay;
+
+
+

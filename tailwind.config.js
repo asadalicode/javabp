@@ -13,7 +13,8 @@ module.exports = {
       'black-secondary': '#181313',
       'gray-dark': '#4C4949',
       'gray': '#F0F0F0',
-      'red': '#ff0000'
+      'red': '#ff0000',
+      'green': 'green'
     },
     backgroundPosition: {
       bottom: 'bottom',

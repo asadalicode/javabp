@@ -48,8 +48,10 @@ const initialValues: initialSchemaValues = {
 const CitizenshipTemplateForm = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState();
     const handleSubmit = async (values: any) => {
         console.log(values)
+        setFormData(values)
         setShowModal(true)
     }
 
@@ -196,7 +198,7 @@ const CitizenshipTemplateForm = () => {
 
             </section>
             {showModal ? (
-                <PaymentModal setModal={setShowModal} />
+                <PaymentModal setModal={setShowModal} to={'CitizenshipTemplateEmail'} formData={formData} />
             ) : null
             }
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PayPal from "../payPal";
 import StripePay from "../stripe";
 
-const PaymentModal = ({ setModal }: any) => {
+const PaymentModal = ({ setModal, to, formData }: any) => {
 
 
     return (
@@ -33,12 +33,12 @@ const PaymentModal = ({ setModal }: any) => {
                             <h5 className="text-right font-bold">TOTAL: $40.00</h5>
                             <div>
                                 <p className="font-bold pb-1">PayPal:</p>
-                                <PayPal />
+                                <PayPal to={to} formData={formData} />
                             </div>
 
                             <div>
                                 <p className="font-bold pb-1">Stripe:</p>
-                                <StripePay />
+                                <StripePay to={to} formData={formData} />
                             </div>
 
                         </div>

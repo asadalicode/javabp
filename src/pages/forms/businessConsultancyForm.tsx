@@ -14,7 +14,7 @@ export interface initialSchemaValues {
     lastName: string,
     companyName: string,
     email: string,
-    services: [],
+    interestedServices: [],
     country: string,
     termsOfService: boolean
 }
@@ -37,7 +37,7 @@ const initialValues: initialSchemaValues = {
     lastName: '',
     companyName: '',
     email: '',
-    services: [],
+    interestedServices: [],
     country: '',
     termsOfService: false
 }
@@ -46,8 +46,10 @@ const initialValues: initialSchemaValues = {
 const BusinessConsultancyForm = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState();
     const handleSubmit = async (values: any) => {
         console.log(values)
+        setFormData(values)
         setShowModal(true)
     }
     return (
@@ -122,41 +124,41 @@ const BusinessConsultancyForm = () => {
                                 </h5>
                                 <div className="grid space-y-3 pt-2">
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="strategic_development" className="checked:bg-yellow w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="strategic_development" className="checked:bg-yellow w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Strategy Development</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="consultancy_support" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="consultancy_support" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Consultancy Support</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="marketing" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="marketing" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Marketing</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="new_product_development" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="new_product_development" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">New Product Development</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="comunications_management" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="comunications_management" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Communications Management</label>
                                     </div>
 
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="electronic_brand_management" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="electronic_brand_management" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Electronic Brand Management</label>
                                     </div>
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="social_media_marketing" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="social_media_marketing" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Social Media Marketing</label>
                                     </div>
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="executive_support_training" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="executive_support_training" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Executive Support & Training</label>
                                     </div>
 
@@ -203,7 +205,7 @@ const BusinessConsultancyForm = () => {
             </section>
 
             {showModal ? (
-                <PaymentModal setModal={setShowModal} />
+                <PaymentModal setModal={setShowModal} to={'BusinessConsultancyTemplateEmail'} formData={formData} />
             ) : null
             }
 

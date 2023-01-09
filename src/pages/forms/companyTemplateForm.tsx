@@ -57,8 +57,10 @@ const initialValues: initialSchemaValues = {
 const CompanyTemplateForm = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState();
     const handleSubmit = async (values: any) => {
         console.log(values)
+        setFormData(values)
         setShowModal(true)
     }
 
@@ -271,7 +273,7 @@ const CompanyTemplateForm = () => {
 
             </section>
             {showModal ? (
-                <PaymentModal setModal={setShowModal} />
+                <PaymentModal setModal={setShowModal} to={'CompanyTemplateEmail'} formData={formData} />
             ) : null
             }
 
