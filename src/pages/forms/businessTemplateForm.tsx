@@ -13,7 +13,7 @@ export interface initialSchemaValues {
     lastName: string,
     phone: string,
     email: string,
-    services: [],
+    interestedServices: [],
     country: string,
     termsOfService: boolean
 }
@@ -23,7 +23,7 @@ const FormSchema = Yup.object().shape({
     lastName: Yup.string().label('Last Name').required(),
     phone: Yup.string(),
     email: Yup.string().email().label('Email').required(),
-    services: Yup.array().label('one sss').min(1).label('one sss'),
+    interestedServices: Yup.array().label('one sss').min(1).label('one sss'),
     country: Yup.string().label('Country').required(),
     termsOfService: Yup
         .bool()
@@ -36,7 +36,7 @@ const initialValues: initialSchemaValues = {
     lastName: '',
     phone: '',
     email: '',
-    services: [],
+    interestedServices: [],
     country: '',
     termsOfService: false
 }
@@ -45,8 +45,10 @@ const initialValues: initialSchemaValues = {
 const BusinessTemplateForm = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState();
     const handleSubmit = async (values: any) => {
         console.log(values)
+        setFormData(values)
         setShowModal(true)
     }
 
@@ -123,37 +125,37 @@ const BusinessTemplateForm = () => {
                                 </h5>
                                 <div className="grid space-y-3 pt-2">
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="List_of_1500_Private_Investors" className="checked:bg-yellow w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="List_of_1500_Private_Investors" className="checked:bg-yellow w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">List of 1500 Private Investors</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Business_Investment" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Business_Investment" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Business Investment</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Venture_Capital_Partnership" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Venture_Capital_Partnership" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Venture Capital Partnership</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Equity_Partnership" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Equity_Partnership" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">	Equity Partnership</label>
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Business_Templates" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Business_Templates" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Business Templates</label>
                                     </div>
 
 
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Financial_Templates" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Financial_Templates" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Financial Templates</label>
                                     </div>
                                     <div className="flex gap-2">
-                                        <Field type="checkbox" name="services" value="Legal_Templates" className="checked:bg-gray-300 w-5 h-5" />
+                                        <Field type="checkbox" name="interestedServices" value="Legal_Templates" className="checked:bg-gray-300 w-5 h-5" />
                                         <label className="block text-sm font-semibold text-black">Legal Templates</label>
                                     </div>
 
@@ -200,7 +202,7 @@ const BusinessTemplateForm = () => {
 
             </section>
             {showModal ? (
-                <PaymentModal setModal={setShowModal} />
+                <PaymentModal setModal={setShowModal} to={'BusinessTemplateEmail'} formData={formData} />
             ) : null
             }
 
