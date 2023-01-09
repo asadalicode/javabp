@@ -85,7 +85,7 @@ const Citizenship = () => {
             </section>
 
 
-            <FindMore />
+            <FindMore url={'/citizenshipTemplate'} />
 
         </>
     );

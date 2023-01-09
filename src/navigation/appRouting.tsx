@@ -5,11 +5,14 @@ import CapitalInvestment from '../pages/capital';
 import Citizenship from '../pages/citizenship';
 import Company from '../pages/company';
 import Contact from '../pages/contact';
+import BusinessTemplateForm from '../pages/forms/businessTemplateForm';
 
 import Home from '../pages/home';
 import HomeContainer from '../pages/homeContainer';
 import Marketing from '../pages/marketing';
-import Payment from '../pages/payments';
+import BusinessConsultancyForm from '../pages/forms/businessConsultancyForm';
+import CitizenshipTemplateForm from '../pages/forms/citizenshipTemplateForm';
+import CompanyTemplateForm from '../pages/forms/companyTemplateForm';
 
 const routes = [
   {
@@ -20,10 +23,13 @@ const routes = [
       { path: "company", component: <Company /> },
       { path: "citizenship", component: <Citizenship /> },
       { path: "marketing", component: <Marketing /> },
-      { path: "payments", component: <Payment /> },
       { path: "contact", component: <Contact /> },
 
-
+      // Forms
+      { path: "businessTemplate", component: <BusinessTemplateForm /> },
+      { path: "businessConsultancyTemplate", component: <BusinessConsultancyForm /> },
+      { path: "citizenshipTemplate", component: <CitizenshipTemplateForm /> },
+      { path: "companyTemplate", component: <CompanyTemplateForm /> },
 
     ]
   },

@@ -107,7 +107,8 @@ const Marketing = () => {
                 </BackroundImage>
             </section>
 
-            <FindMore />
+            <FindMore url={'/businessTemplate'} />
+
 
         </>
     );
