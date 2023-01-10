@@ -1,6 +1,7 @@
 {
   "name": "javabp",
   "version": "0.1.0",
+  "homepage": "https://javabp.javabp.com",
   "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.2",

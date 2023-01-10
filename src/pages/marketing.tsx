@@ -24,7 +24,7 @@ const Marketing = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">How We Can Help You Achieve Your Goals?</h1>
                     <p className=" text-white opacity-70">Consultancy, Strategy, Marketing, Executive Support for your Business</p>
-                    <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-auto px-4 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>

@@ -25,7 +25,7 @@ const Citizenship = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">Our Services</h1>
                     <p className=" text-white opacity-70">Everyone has the opportunity to thrive no matter where home is</p>
-                    <button onClick={() => navigateByUrl('/citizenshipTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/citizenshipTemplate')} className="rounded bg-yellow-secondary w-auto px-4 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>

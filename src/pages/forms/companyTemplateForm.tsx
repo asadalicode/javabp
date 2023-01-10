@@ -70,8 +70,8 @@ const CompanyTemplateForm = () => {
             <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">Company Formation & Bank Account</h1>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
+                    {/* <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                        <p className="text-black-secondary"> Learn More</p></button> */}
                 </div>
             </BackroundImage>
 
