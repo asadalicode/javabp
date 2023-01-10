@@ -7,6 +7,9 @@ import TopMobileBg from "../assets/marketing/HeroBanner_mbl.png";
 import IsMobile from "../utils/detectDevice";
 import { Field, Form, Formik, useFormik } from "formik";
 import * as Yup from 'yup';
+import { useState } from "react";
+import { backendCall } from "../utils/backendCall";
+import { useNavigate } from "react-router";
 
 
 export interface initialSchemaValues {
@@ -33,18 +36,32 @@ const initialValues: initialSchemaValues = {
 
 
 const Contact = () => {
+    let navigate = useNavigate();
+    // const [formData, setFormData] = useState();
+    const handleSubmit = async (values: any) => {
+        // console.log(values)
+        // setFormData(values)
+        sendContactEmail(values)
+    }
+
+    const sendContactEmail = (formData: any) => {
+        const data: any = {
+            url: '/senContactEmail',
+            method: 'POST',
+            data: formData,
+            isNavigate: false
+        }
+        backendCall(data).then(async res => {
+            if (res) {
+                return navigate("/confirmation");
+            }
+        })
+    }
+
+
 
     return (
         <>
-            {/* <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
-                <div className="bg-center-text text-center space-y-6">
-                    <h1 className=" text-white  font-bold ">Contact Us</h1>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
-                </div>
-            </BackroundImage> */}
-
-
             <section className="px-16 py-16 sm:px-8 bg-gray">
                 <h2 className="font-bold pt-16 text-center pb-6">Need to get in touch? Contact us!
                 </h2>
@@ -55,9 +72,7 @@ const Contact = () => {
                             initialValues
                         }
                         validationSchema={FormSchema}
-                        onSubmit={(values) => {
-                            console.log(values);
-                        }}
+                        onSubmit={handleSubmit}
                     >{({ errors, handleChange, handleBlur, touched, values }) => (
                         <Form>
                             <div className="grid gap-6 mb-6 md:grid-cols-3">

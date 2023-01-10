@@ -14,6 +14,7 @@ import BusinessConsultancyForm from '../pages/forms/businessConsultancyForm';
 import CitizenshipTemplateForm from '../pages/forms/citizenshipTemplateForm';
 import CompanyTemplateForm from '../pages/forms/companyTemplateForm';
 import Success from '../pages/success';
+import Confirmation from '../pages/confirmation';
 
 const routes = [
   {
@@ -26,6 +27,8 @@ const routes = [
       { path: "marketing", component: <Marketing /> },
       { path: "contact", component: <Contact /> },
       { path: "success", component: <Success /> },
+      { path: "confirmation", component: <Confirmation /> },
+
       // Forms
       { path: "businessTemplate", component: <BusinessTemplateForm /> },
       { path: "businessConsultancyTemplate", component: <BusinessConsultancyForm /> },
