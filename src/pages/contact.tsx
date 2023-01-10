@@ -46,7 +46,7 @@ const Contact = () => {
 
     const sendContactEmail = (formData: any) => {
         const data: any = {
-            url: '/senContactEmail',
+            url: '/sendContactEmail',
             method: 'POST',
             data: formData,
             isNavigate: false
