@@ -26,8 +26,9 @@ const CheckoutForm = ({ to, formData }: any) => {
         const cardElement: any = elements.getElement("card");
 
         stripe?.createToken(cardElement).then((res) => {
-            console.log(res)
-            createStripeCheckout(res.token)
+            if (res.token) {
+                createStripeCheckout(res.token)
+            }
 
         }).catch((error) => {
             console.log(error)
