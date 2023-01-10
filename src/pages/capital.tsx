@@ -27,7 +27,7 @@ const CapitalInvestment = () => {
                     <h1 className=" text-white  font-bold ">Capital, Investments & Funding Partnerships</h1>
                     <p className=" text-white opacity-70">Connecting Business to Partners across the globe that are on standby to fund your start-up, business expansion or invest in your business to see it grow</p>
                     <button onClick={() => navigateByUrl('/businessConsultancyTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
+                        <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>
 

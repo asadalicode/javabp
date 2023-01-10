@@ -43,7 +43,7 @@ const Home = () => {
                     <h1 className=" text-white  font-bold ">JAVA Business Partners</h1>
                     <p className=" text-white opacity-70">Our global partnerships connects you to difficult to access products and services at huge discounted rates. Collectively, with over 50 years of providing exceptional service, Java Business Partners is able to connect solve your business or personal need, and connect you to our global partners within a number of hours.</p>
                     <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
+                        <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>
 

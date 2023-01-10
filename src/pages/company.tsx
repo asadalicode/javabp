@@ -28,7 +28,7 @@ const Company = () => {
                     <h1 className=" text-white  font-bold ">The world’s #1 online company formation provider</h1>
                     <p className=" text-white opacity-70">Need to do Business Globally? Serving clients from our Global offices, we offer the lowest costs, fast company registration and a truly unique service.</p>
                     <button onClick={() => navigateByUrl('/companyTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
+                        <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>
 

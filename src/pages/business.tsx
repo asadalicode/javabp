@@ -100,7 +100,7 @@ const BusinessPage = () => {
                     <h1 className=" text-white  font-bold ">All The Business, Financial & Legal Documents You Need</h1>
                     <p className=" text-white opacity-70">"Strive not to be a success but rather to be of value" <br /> ~~ Albert Einstein</p>
                     <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button>
+                        <p className="text-black-secondary">Get Registered Now!</p></button>
                 </div>
             </BackroundImage>
 
