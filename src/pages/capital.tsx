@@ -11,8 +11,14 @@ import Section2UpperBg from "../assets/capital/Group959.jpg";
 import Section3UpperBg from "../assets/capital/WhoWeAre.svg";
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
+import { useNavigate } from "react-router";
 
 const CapitalInvestment = () => {
+
+    let navigate = useNavigate();
+    const navigateByUrl = (url: string) => {
+        return navigate(url);
+    }
 
     return (
         <>
@@ -20,7 +26,7 @@ const CapitalInvestment = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">Capital, Investments & Funding Partnerships</h1>
                     <p className=" text-white opacity-70">Connecting Business to Partners across the globe that are on standby to fund your start-up, business expansion or invest in your business to see it grow</p>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/businessConsultancyTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
             </BackroundImage>

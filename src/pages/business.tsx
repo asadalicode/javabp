@@ -44,6 +44,7 @@ import { ReactComponent as Dissolution } from "../assets/business/Dissolution.sv
 
 import Carousel from "../utils/carousel";
 import FindMore from "./findMore";
+import { useNavigate } from "react-router";
 
 export interface cardData {
     heading: string,
@@ -84,6 +85,13 @@ const cardData: cardData[] = [
     { heading: '', icon: <Tax className="h-16 w-full" />, text: 'Tax' },
 ]
 const BusinessPage = () => {
+
+
+    let navigate = useNavigate();
+    const navigateByUrl = (url: string) => {
+        return navigate(url);
+    }
+
     return (
         <>
 
@@ -91,7 +99,7 @@ const BusinessPage = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">All The Business, Financial & Legal Documents You Need</h1>
                     <p className=" text-white opacity-70">"Strive not to be a success but rather to be of value" <br /> ~~ Albert Einstein</p>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
             </BackroundImage>

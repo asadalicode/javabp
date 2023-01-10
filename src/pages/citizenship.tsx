@@ -10,8 +10,14 @@ import Section4UpperBg from "../assets/citizenship/Group36.png";
 import Section5UpperBg from "../assets/citizenship/Group600.png";
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
+import { useNavigate } from "react-router";
 
 const Citizenship = () => {
+
+    let navigate = useNavigate();
+    const navigateByUrl = (url: string) => {
+        return navigate(url);
+    }
 
     return (
         <>
@@ -19,7 +25,7 @@ const Citizenship = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">Our Services</h1>
                     <p className=" text-white opacity-70">Everyone has the opportunity to thrive no matter where home is</p>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/citizenshipTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
             </BackroundImage>

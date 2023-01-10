@@ -15,8 +15,8 @@ const FindMore = ({ url }: any) => {
                     <h5 className=" text-white text-left font-bold ">Find Out More About Our Service Offerings And How We Can Help You Access Your 20% Discount Off <br /> Our Services?</h5>
                     <h5 className=" text-white text-left font-bold ">Register Online For One Of Our Service Offerings To Qualify For Your Discount</h5>
                     <Link to={url} >
-                        <button className=" rounded border-2 border-yellow-secondary w-auto mt-3 p-3 sm:bg-yellow-secondary">
-                            <p className="text-yellow-secondary sm:text-black font-semibold">Register Online Here Now</p>
+                        <button className=" rounded border-2 border-yellow-secondary w-auto mt-3 p-3 bg-yellow-secondary">
+                            <p className=" text-black font-semibold">Register Online Here Now</p>
                         </button>
 
                     </Link>

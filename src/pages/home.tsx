@@ -26,8 +26,14 @@ import { ReactComponent as Investment } from "../assets/icons/investment.svg";
 
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
+import { useNavigate } from "react-router";
 
 const Home = () => {
+
+    let navigate = useNavigate();
+    const navigateByUrl = (url: string) => {
+        return navigate(url);
+    }
 
     return (
         <>
@@ -36,7 +42,7 @@ const Home = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">JAVA Business Partners</h1>
                     <p className=" text-white opacity-70">Our global partnerships connects you to difficult to access products and services at huge discounted rates. Collectively, with over 50 years of providing exceptional service, Java Business Partners is able to connect solve your business or personal need, and connect you to our global partners within a number of hours.</p>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/businessTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
             </BackroundImage>
@@ -146,7 +152,7 @@ const Home = () => {
             </BackroundImage>
 
 
-            <FindMore />
+            <FindMore url={'/businessTemplate'} />
 
         </>
     );

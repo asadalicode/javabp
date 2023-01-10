@@ -12,8 +12,14 @@ import Section2UpperBg from "../assets/capital/Group959.jpg";
 import Section3UpperBg from "../assets/company/Group36.png";
 import IsMobile from "../utils/detectDevice";
 import FindMore from "./findMore";
+import { useNavigate } from "react-router";
 
 const Company = () => {
+
+    let navigate = useNavigate();
+    const navigateByUrl = (url: string) => {
+        return navigate(url);
+    }
 
     return (
         <>
@@ -21,7 +27,7 @@ const Company = () => {
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">The world’s #1 online company formation provider</h1>
                     <p className=" text-white opacity-70">Need to do Business Globally? Serving clients from our Global offices, we offer the lowest costs, fast company registration and a truly unique service.</p>
-                    <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
+                    <button onClick={() => navigateByUrl('/companyTemplate')} className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
                         <p className="text-black-secondary"> Learn More</p></button>
                 </div>
             </BackroundImage>
