@@ -1,7 +1,7 @@
 import BackroundImage from "../utils/backgroundImage";
 
-import TopBg from "../assets/home/Hero_bg.png";
-import TopMobileBg from "../assets/home/Hero_bg_mbl.png";
+import TopBg from "../assets/home/Hero_bg.jpg";
+import TopMobileBg from "../assets/home/Hero_bg_mbl.jpg";
 import Section1Bg from "../assets/home/section1_bg.svg";
 import Section2Bg from "../assets/home/section2_bg.svg";
 import Section2MobBg from "../assets/home/section2_mob_bg.png";
