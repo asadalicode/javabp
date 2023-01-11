@@ -10,6 +10,7 @@ import * as Yup from 'yup';
 import { useState } from "react";
 import { backendCall } from "../utils/backendCall";
 import { useNavigate } from "react-router";
+import CustomButton from "../utils/customButton";
 
 
 export interface initialSchemaValues {
@@ -38,6 +39,7 @@ const initialValues: initialSchemaValues = {
 const Contact = () => {
     let navigate = useNavigate();
     // const [formData, setFormData] = useState();
+    const [loading, setLoading] = useState(false);
     const handleSubmit = async (values: any) => {
         // console.log(values)
         // setFormData(values)
@@ -51,7 +53,9 @@ const Contact = () => {
             data: formData,
             isNavigate: false
         }
+        setLoading(true)
         backendCall(data).then(async res => {
+            setLoading(false)
             if (res) {
                 return navigate("/confirmation");
             }
@@ -117,9 +121,8 @@ const Contact = () => {
                                     />
                                 </div>
                             </div>
+                            <CustomButton isLoading={loading} label={'Submit Form'} styleClass={'font-semibold'} />
 
-                            <button type="submit" className=" rounded hover:opacity-80  bg-yellow-secondary  mb-6  px-4 py-2 font-semibold">
-                                <p>Submit Form</p></button>
                         </Form>
                     )}
                     </Formik>
