@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import BusinessPage from '../pages/business';
 import CapitalInvestment from '../pages/capital';
 import Citizenship from '../pages/citizenship';
@@ -15,6 +15,7 @@ import CitizenshipTemplateForm from '../pages/forms/citizenshipTemplateForm';
 import CompanyTemplateForm from '../pages/forms/companyTemplateForm';
 import Success from '../pages/success';
 import Confirmation from '../pages/confirmation';
+import { ScrollToTop } from '../utils/scrollTop';
 
 const routes = [
   {
@@ -42,6 +43,7 @@ const routes = [
 const AppRouting = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
 
         {routes.map(({ path, component, children }) => (
