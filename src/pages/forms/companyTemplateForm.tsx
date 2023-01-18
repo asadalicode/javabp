@@ -67,16 +67,15 @@ const CompanyTemplateForm = () => {
 
     return (
         <>
-            <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
+            {/* <BackroundImage url={IsMobile() ? TopMobileBg : TopBg} classes='bg-contain'>
                 <div className="bg-center-text text-center space-y-6">
                     <h1 className=" text-white  font-bold ">Company Formation & Bank Account</h1>
-                    {/* <button className="rounded bg-yellow-secondary w-40 h-12 hover:bg-yellow ">
-                        <p className="text-black-secondary"> Learn More</p></button> */}
+                    
                 </div>
-            </BackroundImage>
+            </BackroundImage> */}
 
 
-            <section className="px-16 sm:px-8 bg-gray">
+            <section className="px-16 py-16 sm:px-8 bg-gray">
                 <h2 className="font-bold pt-16 text-center pb-6">Company Formation & Bank Account
                 </h2>
 
